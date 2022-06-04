@@ -1,10 +1,3 @@
-
-
-
-
-
-
-
 ////////////////////////////// JAVASCRIPT EXERCISES ///////////////////////////////////////
 //EXERCISE 1
 function calculateSquare(array){
@@ -30,10 +23,7 @@ function actorInMovies(movies, actor){
   }
 
 
-
 // EXERCISE 4
- 
-
 function listActors(movies){
 
       function getActors(movies){
@@ -52,8 +42,6 @@ function listActors(movies){
           return finalActors.sort();
       }
 
-
-
       const actorsArray = getActors(movies)
       const bodyEl = document.getElementById("body");
       const unorderList = document.createElement("ul");
@@ -63,12 +51,9 @@ function listActors(movies){
           const element = document.createElement("li");
           element.innerHTML= actorsArray[i];
           unorderList.appendChild(element);
-
         }
 
 }
-
-
 
 // EXERCISE 5
  fetch("https://jsonplaceholder.typicode.com/posts").then(res => res.json())
@@ -78,7 +63,6 @@ function listActors(movies){
  })
  .catch(error => console.log(error, "Error"))
 
-
 ////////////////////////////////////// DATA STRUCTURE /////////////////////////////////////////////
 
 //EXERCISE 1 
@@ -86,14 +70,9 @@ function listActors(movies){
 const squares = nums => nums.map(e => e * e )
 
 
-
-
 //EXERCISE 2
 // counters = [{count: 95}, {count: 8}, {count: 23}, {count: 51}]
 const sum = counters => (counters.map(e => e.count)).reduce((sum, e) => sum + e, 0)
-
-
-
 
 
 //EXERCISE 3
@@ -124,7 +103,7 @@ const formatted = (string, n) => {
 }
 
 
-
+///////////////////////////////////// TEST /////////////////////////////////////////////
 
 const testSolutions = () => {
 const assert = cond => {
